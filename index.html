@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA·LAB — Quality Assurance Engineering</title>
+  <meta name="description" content="Servicios de QA Testing de alto impacto. Automatización E2E, testing manual, API, performance y security testing para equipos que no pueden permitirse lanzar con fallos.">
+  <meta name="author" content="QA·LAB">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="QA·LAB — Quality Assurance Engineering">
+  <meta property="og:description" content="Software sin bugs, no es una opción. QA Testing profesional para tu producto.">
+  <meta property="og:type"        content="website">
+
+  <!-- Fonts (Google Fonts — requiere conexión a internet) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&amp;display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <!-- ── Custom Cursor ────────────────────── -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ── Navigation ───────────────────────── -->
+  <nav aria-label="Navegación principal">
+    <a href="#home" class="logo">QA<span>·</span>LAB</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+      <span class="sr-only">Abrir menú</span>
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">// servicios</a></li>
+      <li><a href="#process">// proceso</a></li>
+      <li><a href="#pricing">// precios</a></li>
+      <li><a href="#contact">// contacto</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Iniciar proyecto →</a>
+  </nav>
+
+  <main id="main-content">
+  <!-- ── Hero ─────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">QA Engineering · Disponible ahora</div>
+
+      <h1>
+        Software <span class="strike">con bugs</span><br>
+        no es una<br>
+        <em>opción.</em>
+      </h1>
+
+      <p class="hero-desc">
+        Servicios de QA Testing de alto impacto para equipos que no pueden permitirse
+        lanzar con fallos. Automatización, testing manual, CI/CD integration y más.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          Solicitar auditoría gratis
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#services" class="btn-ghost">Ver servicios</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-num">98<span>%</span></div>
+          <div class="stat-label">Cobertura media</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3<span>×</span></div>
+          <div class="stat-label">Más rápido con CI/CD</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">0<span>→</span></div>
+          <div class="stat-label">Bugs en producción</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">50<span>+</span></div>
+          <div class="stat-label">Proyectos entregados</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Tech Stack Strip ─────────────────── -->
+  <div class="stack">
+    <div class="stack-label">// TECNOLOGÍAS Y HERRAMIENTAS</div>
+    <div class="stack-logos">
+      <span class="stack-item">Playwright</span>
+      <span class="stack-item">Cypress</span>
+      <span class="stack-item">Selenium</span>
+      <span class="stack-item">Jest</span>
+      <span class="stack-item">PyTest</span>
+      <span class="stack-item">Postman</span>
+      <span class="stack-item">JMeter</span>
+      <span class="stack-item">GitHub Actions</span>
+      <span class="stack-item">Jenkins</span>
+      <span class="stack-item">k6</span>
+      <span class="stack-item">Appium</span>
+      <span class="stack-item">TestRail</span>
+    </div>
+  </div>
+
+  <!-- ── Services ─────────────────────────── -->
+  <section class="services" id="services">
+    <div class="reveal">
+      <div class="section-label">// 01 — SERVICIOS</div>
+      <h2 class="section-title">Todo el QA que tu producto necesita.</h2>
+      <p class="section-desc">Cobertura completa de calidad: desde el primer commit hasta la release en producción.</p>
+    </div>
+
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <div class="service-name">Automatización E2E</div>
+        <div class="service-desc">Suites de pruebas end-to-end con Playwright y Cypress. Integración nativa con tu pipeline CI/CD para detección de regresiones en segundos.</div>
+        <div class="service-tag">// PLAYWRIGHT · CYPRESS</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔬</div>
+        <div class="service-name">Testing Manual</div>
+        <div class="service-desc">QA exploratorio con criterio senior. Detección de edge cases que la automatización no ve. Análisis UX/UI desde la perspectiva del usuario real.</div>
+        <div class="service-tag">// EXPLORATORIO · UX</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔌</div>
+        <div class="service-name">API Testing</div>
+        <div class="service-desc">Validación exhaustiva de REST y GraphQL APIs. Contract testing, autenticación, edge cases, y cobertura de errores con Postman y Python.</div>
+        <div class="service-tag">// REST · GRAPHQL · POSTMAN</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <div class="service-name">Mobile QA</div>
+        <div class="service-desc">Testing nativo iOS y Android con Appium. Validación en múltiples dispositivos reales y emuladores. Cobertura de gestures y comportamientos nativos.</div>
+        <div class="service-tag">// iOS · ANDROID · APPIUM</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <div class="service-name">Performance &amp; Load</div>
+        <div class="service-desc">Pruebas de carga, estrés y rendimiento con k6 y JMeter. Identifica cuellos de botella antes de que lo hagan tus usuarios en producción.</div>
+        <div class="service-tag">// K6 · JMETER · LOAD</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <div class="service-name">Security Testing</div>
+        <div class="service-desc">Análisis de vulnerabilidades OWASP Top 10. SQL injection, XSS, CSRF, y pentesting básico. Informe detallado con severidad y recomendaciones de mitigación.</div>
+        <div class="service-tag">// OWASP · PENTEST</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Terminal + Info ───────────────────── -->
+  <section class="terminal-section">
+    <div class="reveal">
+      <div class="section-label">// 02 — TECNOLOGÍA</div>
+      <h2 class="section-title">Resultados reales, no promesas.</h2>
+      <p class="section-desc" style="margin-bottom: 2rem;">
+        Cada bug encontrado antes de producción es un incidente evitado, tiempo ahorrado
+        y reputación protegida. Los números lo demuestran.
+      </p>
+      <p class="section-desc">
+        Trabajamos directamente en tu repositorio, integrando tests que el equipo puede
+        mantener. Sin cajas negras.
+      </p>
+    </div>
+
+    <div class="terminal reveal">
+      <div class="terminal-header">
+        <div class="dot r"></div>
+        <div class="dot y"></div>
+        <div class="dot g"></div>
+        <span style="font-size:0.7rem; color: var(--muted); margin-left: 0.5rem;">qa-lab · audit-run.sh</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-dim">$</span> <span class="t-green">npx playwright test</span> <span class="t-dim">--reporter=dot</span></div>
+        <div class="t-dim">Running 247 tests using 4 workers</div>
+        <div>&nbsp;</div>
+        <div><span class="t-green">✓</span> <span class="t-white">auth/login.spec.ts</span> <span class="t-dim">(1.2s)</span></div>
+        <div><span class="t-green">✓</span> <span class="t-white">checkout/payment.spec.ts</span> <span class="t-dim">(2.8s)</span></div>
+        <div><span class="t-yellow">⚠</span> <span class="t-white">user/profile.spec.ts</span> <span class="t-dim">(0.3s)</span></div>
+        <div><span class="t-red">✗</span> <span class="t-white">api/orders.spec.ts</span> <span class="t-red"> ← CRITICAL</span></div>
+        <div>&nbsp;</div>
+        <div class="t-dim">────────────────────────────────</div>
+        <div><span class="t-blue">REPORT</span> <span class="t-dim">Generated at</span> <span class="t-white">./qa-report/</span></div>
+        <div><span class="t-green">244 passed</span> · <span class="t-yellow">1 flaky</span> · <span class="t-red">2 failed</span></div>
+        <div>&nbsp;</div>
+        <div><span class="t-dim">$</span> <span class="t-white">_</span><span class="blink">█</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Process ───────────────────────────── -->
+  <section class="process" id="process">
+    <div class="reveal">
+      <div class="section-label">// 03 — PROCESO</div>
+      <h2 class="section-title">Cómo trabajamos juntos.</h2>
+      <p class="section-desc">Un proceso claro y sin sorpresas desde el día uno hasta el entregable final.</p>
+    </div>
+
+    <div class="process-steps reveal">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-code">// DISCOVERY</div>
+        <div class="step-title">Auditoría inicial</div>
+        <div class="step-desc">Revisión del stack tecnológico, cobertura actual de tests, pipeline de CI/CD y puntos de riesgo. Entregamos un informe con hallazgos y plan de acción.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-code">// STRATEGY</div>
+        <div class="step-title">Plan de pruebas</div>
+        <div class="step-desc">Definimos juntos el alcance, prioridades, herramientas y métricas de éxito. Todo documentado y alineado con tus objetivos de negocio.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-code">// EXECUTION</div>
+        <div class="step-title">Implementación</div>
+        <div class="step-desc">Desarrollo de suites de tests, integración con CI/CD, ejecución de pruebas manuales y generación de evidencias. Comunicación diaria del avance.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-code">// DELIVERY</div>
+        <div class="step-title">Entrega y handover</div>
+        <div class="step-desc">Informe ejecutivo con bugs críticos, métricas de cobertura y recomendaciones. Sesión de traspaso para que tu equipo pueda continuar sin dependencia.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pricing ───────────────────────────── -->
+  <section class="pricing" id="pricing">
+    <div class="reveal">
+      <div class="section-label">// 04 — PRECIOS</div>
+      <h2 class="section-title">Planes que escalan con tu equipo.</h2>
+      <p class="section-desc">Sin permanencias. Sin costes ocultos. Solo QA de calidad cuando lo necesitas.</p>
+    </div>
+
+    <div class="pricing-grid reveal">
+      <!-- Starter -->
+      <div class="plan">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">1.200<span>€</span></div>
+        <div class="plan-period">// por proyecto</div>
+        <ul class="plan-features">
+          <li>Auditoría inicial básica</li>
+          <li>Testing manual hasta 20 casos</li>
+          <li>API testing básico</li>
+          <li>Informe de bugs con severidad</li>
+          <li class="disabled">Automatización E2E</li>
+          <li class="disabled">Integración CI/CD</li>
+          <li class="disabled">Performance testing</li>
+        </ul>
+        <a href="#contact" class="plan-btn outline" data-plan="Starter">Solicitar →</a>
+      </div>
+
+      <!-- Professional (featured) -->
+      <div class="plan featured">
+        <div class="plan-badge">MÁS POPULAR</div>
+        <div class="plan-name">Professional</div>
+        <div class="plan-price">3.800<span>€</span></div>
+        <div class="plan-period">// por sprint (2 semanas)</div>
+        <ul class="plan-features">
+          <li>Auditoría completa del stack</li>
+          <li>Testing manual exhaustivo</li>
+          <li>Automatización E2E (hasta 80 tests)</li>
+          <li>API + contrato de tests</li>
+          <li>Integración GitHub Actions</li>
+          <li>Performance testing básico</li>
+          <li class="disabled">Security testing</li>
+        </ul>
+        <a href="#contact" class="plan-btn solid" data-plan="Professional">Solicitar →</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="plan">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">Custom</div>
+        <div class="plan-period">// retainer mensual</div>
+        <ul class="plan-features">
+          <li>QA engineer dedicado</li>
+          <li>Automatización sin límite</li>
+          <li>Mobile + web + API</li>
+          <li>Security &amp; performance</li>
+          <li>SLA garantizado</li>
+          <li>Slack / Teams integrado</li>
+          <li>Onboarding del equipo</li>
+        </ul>
+        <a href="#contact" class="plan-btn outline" data-plan="Enterprise">Hablemos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials ──────────────────────── -->
+  <section class="testimonials">
+    <div class="reveal">
+      <div class="section-label">// 05 — CLIENTES</div>
+      <h2 class="section-title">Lo que dicen quienes ya trabajan con nosotros.</h2>
+    </div>
+
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <div class="testi-quote">El informe de auditoría fue demoledor en el buen sentido. Encontraron en 3 días lo que nuestro equipo no había detectado en meses. La integración con nuestro pipeline fue perfecta.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: rgba(0,229,160,0.15); color: var(--accent);">ML</div>
+          <div>
+            <div class="testi-name">Marta López</div>
+            <div class="testi-role">CTO · Fintech startup</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">Redujimos los bugs en producción un 94% tras el primer sprint. El ROI fue evidente desde la primera semana. Ahora son parte permanente de nuestro proceso de release.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: rgba(124,107,255,0.15); color: var(--accent2);">JR</div>
+          <div>
+            <div class="testi-name">Javier Ruiz</div>
+            <div class="testi-role">Product Manager · SaaS B2B</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">Lo que más valoré fue la transparencia. Cada día sabías exactamente qué se estaba testeando, qué había fallado y por qué. Sin sorpresas al final del sprint.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: rgba(255,77,109,0.15); color: var(--accent3);">AR</div>
+          <div>
+            <div class="testi-name">Ana Ramos</div>
+            <div class="testi-role">Lead Developer · E-commerce</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA / Contact ─────────────────────── -->
+  <section class="cta-section" id="contact">
+    <div class="cta-glow"></div>
+    <div class="contact-wrap">
+      <div class="contact-copy">
+        <div class="section-label">// EMPEZAR</div>
+        <h2 class="section-title">¿Listo para lanzar sin miedo?</h2>
+        <p class="section-desc">Cuéntanos dónde está el riesgo. Te responderemos con los siguientes pasos para una primera auditoría de 30 minutos, gratuita y sin compromiso.</p>
+        <div class="contact-meta">
+          <span>Respuesta en 1 día laborable</span>
+          <a href="mailto:hola@qalab.dev">hola@qalab.dev</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label>Nombre
+            <input type="text" name="name" autocomplete="name" required placeholder="Tu nombre">
+          </label>
+          <label>Email de trabajo
+            <input type="email" name="email" autocomplete="email" required placeholder="tu@empresa.com">
+          </label>
+        </div>
+        <label>¿Qué necesitas?
+          <select name="plan" id="planSelect">
+            <option value="Auditoría inicial">Auditoría inicial</option>
+            <option value="Starter">Plan Starter</option>
+            <option value="Professional">Plan Professional</option>
+            <option value="Enterprise">Plan Enterprise</option>
+            <option value="No estoy seguro">No estoy seguro todavía</option>
+          </select>
+        </label>
+        <label>Contexto del proyecto
+          <textarea name="message" rows="4" required placeholder="Producto, stack, momento del proyecto y principal preocupación…"></textarea>
+        </label>
+        <button class="btn-primary form-submit" type="submit">Preparar consulta <span aria-hidden="true">→</span></button>
+        <p class="form-note">Al enviar, abriremos tu aplicación de correo con el mensaje preparado.</p>
+      </form>
+    </div>
+  </section>
+  </main>
+
+  <!-- ── Footer ────────────────────────────── -->
+  <footer>
+    <div class="footer-left">
+      <div class="footer-logo">QA<span>·</span>LAB</div>
+      <div class="footer-copy">© <span id="currentYear">2026</span> QA·LAB — Quality Assurance Engineering · Madrid, España</div>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:hola@qalab.dev?subject=LinkedIn%20QA%C2%B7LAB">LinkedIn</a>
+      <a href="mailto:hola@qalab.dev?subject=GitHub%20QA%C2%B7LAB">GitHub</a>
+      <a href="mailto:hola@qalab.dev?subject=Privacidad%20QA%C2%B7LAB">Privacidad</a>
+      <a href="mailto:hola@qalab.dev?subject=T%C3%A9rminos%20QA%C2%B7LAB">Términos</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
